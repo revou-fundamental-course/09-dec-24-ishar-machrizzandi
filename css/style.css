@@ -59,6 +59,57 @@ form {
     padding-bottom: 64px;
 }
 
+.packages-content {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    row-gap: 20px;
+    padding: 2rem 1.75rem ;
+}
+
+.packages-item {
+    /* width: calc(100vw / 3 - 6px); */
+    padding: 3px 5px;
+    display: flex;
+    align-items: flex-start;
+    
+    
+}
+
+.packages-item .icon {
+    border-radius: 100%;
+    padding: 8px;
+    background-color: #cacaca;
+}
+
+.packages-item .icon>i {
+    color: white;
+    font-size: 22px !important;
+}
+
+.packages-item .content {
+    margin-left: 1.5rem;
+}
+
+
+.packages-item .content .label {
+    font-size: 22px;
+    line-height: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+
+}
+
+.packages-item .content .description {
+   font-weight: 400;
+   font-size: 18px;
+   color: grey;
+
+}
+
 footer {
     margin-top: 24px;
     text-align: center;
