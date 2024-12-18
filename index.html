@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>M SYA'RANI MACHRIZZANDI</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,9 +13,9 @@
         <div class="home-icon"></div>
 
         <nav>
-            <a href="#">Home</a>
+            <a href="#main-container">Home</a>
             <a href="#our-package-section">Our Packages</a>
-            <a href="#">Call Us</a>
+            <a href="#call-us">Call Us</a>
         </nav>
     </header>
 
@@ -25,17 +25,54 @@
         <header class="content-header">
             <h1>Your Trusted Travel Agent</h1>
             <h3>Your Happiness is Our Happiness</h3>
+            <h3 id="username-result"></h3>
         </header>
 
         <!-- Home Content -->
         <section class="main-container">
             <!-- Banner AutoSlide Content -->
             <aside class="main-item">
-                <div class="banner-img"></div>
+                <div class="banner-img banner-1"></div>
+                <div class="banner-img banner-2"></div>
+                <div class="banner-img banner-3"></div>
             </aside>
 
             <!-- Form Contact Us -->
-            <form class="main-item"></form>
+            <div class="form-card"> 
+                <div class="form-card-header">
+                    <h3>Contact Us</h3>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                </div>
+                <div class="form-card-content">
+                    <form action="#" class="main-item" id="formInput">
+                        <div class="form-control">
+                            <label>Your Name</label>
+                            <input type="text" id="username-input" placeholder="First and Last Name">
+                            <p id="username-error" class="input-error">Harus di Isi</p>
+                        </div>
+                        <div class="form-control">
+                            <label>Email Address</label>
+                            <input type="text" id="email-input" placeholder="Example@email.com">
+                            <p id="email-error" class="input-error">Harus di Isi</p>
+                        </div>
+                        <div class="form-control">
+                            <label>What Are You Interested In</label>
+                            <select id="hobby-input">
+                                <option selected disabled value="">Select Option</option>
+                                <option value="Olahraga">Olahraga</option>
+                                <option value="Makan">Makan</option>
+                                <option value="Minum">Minum</option>
+                                <option value="Tidur">Tidur</option>
+                            </select>
+                            <p id="hobby-error" class="input-error">Harus di Isi</p>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn" class="btn">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+           
         </section>
 
         <!-- Our Packages Content -->
@@ -58,8 +95,8 @@
                     <i class="material-icons" style="font-size:48px;">room</i>
                 </div>
                 <div class="content">
-                    <h1 class="label">Bali</h1>
-                    <p class="description">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <h1 class="label">Japan</h1>
+                    <p class="description">Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik</p>
                 </div>
             </div>
             <div class="packages-item">
@@ -67,8 +104,8 @@
                     <i class="material-icons" style="font-size:48px;">room</i>
                 </div>
                 <div class="content">
-                    <h1 class="label">Bali</h1>
-                    <p class="description">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <h1 class="label">Surabaya</h1>
+                    <p class="description">Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</p>
                 </div>
             </div>
             <div class="packages-item">
@@ -76,8 +113,8 @@
                     <i class="material-icons" style="font-size:48px;">room</i>
                 </div>
                 <div class="content">
-                    <h1 class="label">Bali</h1>
-                    <p class="description">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <h1 class="label">Singapore</h1>
+                    <p class="description">Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik</p>
                 </div>
             </div>
             <div class="packages-item">
@@ -85,8 +122,8 @@
                     <i class="material-icons" style="font-size:48px;">room</i>
                 </div>
                 <div class="content">
-                    <h1 class="label">Bali</h1>
-                    <p class="description">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                    <h1 class="label">Bandung</h1>
+                    <p class="description">Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</p>
                 </div>
             </div>
             <div class="packages-item">
@@ -94,12 +131,18 @@
                     <i class="material-icons" style="font-size:48px;">room</i>
                 </div>
                 <div class="content">
-                    <h1 class="label">Bali</h1>
+                    <h1 class="label">Third Feature</h1>
                     <p class="description">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
                 </div>
             </div>
             
            </div>
+        </section>
+        <!-- Call Us Content -->
+        <section id="call-us">
+            <header class="content-header our-packages-header">
+                <h1>Call Us</h1>
+            </header>
         </section>
     </main>
 
@@ -107,5 +150,6 @@
         <span>Made by Machrizzandi@2024</span>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
