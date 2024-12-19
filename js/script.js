@@ -51,6 +51,16 @@ document.getElementById("formInput").addEventListener("submit", function(event) 
     validateForm();
 })
 
+document.getElementById("subscribe").addEventListener("click", function(event) {
+    event.preventDefault();
+    const subscribeInput = document.getElementById("subscribe-input").value;
+    if (subscribeInput == "") {
+        document.getElementById("sub-error").style.display = "block";
+     } else {
+                document.getElementById("sub-error").style.display = "none";
+     }
+})
+
 
 function nextSlide() {
     showBanner(indexSlide += 1)
